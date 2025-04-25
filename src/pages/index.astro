@@ -1,8 +1,10 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import '@picocss/pico/css/pico.min.css';
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
-const pageTitle = 'Inicio'
+const pageTitle = "Inicio";
 ---
 
 <html lang="en">
@@ -15,9 +17,12 @@ const pageTitle = 'Inicio'
 	</head>
 	<body>
 
-		<Navigation />
+		<Header pageTitle={pageTitle}/>
 
-		<h1>{pageTitle}</h1>
-		
+		<main>
+
+		</main>
+
+		<Footer />
 	</body>
 </html>
